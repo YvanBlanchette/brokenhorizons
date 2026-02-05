@@ -1,4 +1,4 @@
-import heroBg from '@/assets/images/hero-bg.png'
+import heroBg from '@/assets/images/hero-bg.jpg'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Navbar } from '@/components/navbar'

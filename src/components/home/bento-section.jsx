@@ -1,8 +1,10 @@
-import audiobookImg from '@/assets/images/audiobook.png'
+import audibleLogo from '@/assets/images/audible_logo-light.svg'
+import audiobookImg from '@/assets/images/audiobook.jpg'
 import BH1Image from '@/assets/images/bh1.jpg'
-import crewImage from '@/assets/images/crew.png'
-import podcastImg from '@/assets/images/podcast.png'
-import universeImage from '@/assets/images/universe.png'
+import crewImage from '@/assets/images/crew.jpg'
+import podcastImg from '@/assets/images/podcast.jpg'
+import spotifyLogo from '@/assets/images/spotify_logo.svg'
+import universeImage from '@/assets/images/universe.jpg'
 import { BentoCard } from '@/components/bento-card'
 import { Container } from '@/components/container'
 import { Heading, Subheading } from '@/components/text'
@@ -59,7 +61,7 @@ function BentoSection() {
 
               {/* Click layer on top */}
               <Link
-                href="/universe"
+                href="/construction"
                 className="absolute inset-0 z-20 cursor-pointer"
                 aria-label="Go deeper than the story"
               />
@@ -70,24 +72,37 @@ function BentoSection() {
         />
         <BentoCard
           eyebrow="PODCAST"
-          title="Listen beyond the page"
-          description="Experience Broken Horizons as an immersive audio series, available now on Spotify and Apple Podcasts."
+          title="Get Extra Data"
+          description="Explore Broken Horizons through an immersive audio companion series, featuring exclusive extras and expanded material from the universe."
           graphic={
             <div className="group relative h-80 w-full overflow-hidden">
               <Image
                 src={podcastImg}
                 alt="Podcast Image"
                 fill
-                className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
+                className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.00]"
                 priority={false}
               />
 
-              {/* Click layer on top */}
-              <Link
+              {/* <Link
                 href="/broken-horizons/bh1"
-                className="absolute inset-0 z-20 cursor-pointer"
-                aria-label="Go deeper than the story"
-              />
+                aria-disabled="true"
+                tabIndex={-1}
+                className="absolute inset-0 z-20 cursor-not-allowed"
+              /> */}
+
+              <div className="absolute inset-0 bg-black/45 backdrop-blur-[1px]" />
+
+              <div className="pointer-events-none absolute inset-0 z-30 flex flex-col items-center justify-center gap-2">
+                <Image
+                  alt="Spotify"
+                  src={spotifyLogo}
+                  className="h-9 w-auto max-sm:mx-auto sm:h-8 lg:h-14"
+                />
+                <div className="rounded-full bg-black/70 px-6 py-1 text-sm font-medium tracking-wide text-white">
+                  Coming soon
+                </div>
+              </div>
             </div>
           }
           fade={['bottom']}
@@ -142,15 +157,20 @@ function BentoSection() {
 
               <div className="absolute inset-0 bg-black/45 backdrop-blur-[1px]" />
 
-              <div className="pointer-events-none absolute inset-0 z-30 flex items-center justify-center">
-                <div className="rounded-full bg-black/70 px-6 py-2 text-sm font-medium tracking-wide text-white">
-                  Coming soon on Audible
+              <div className="pointer-events-none absolute inset-0 z-30 flex flex-col items-center justify-center gap-2">
+                <Image
+                  alt="Audible"
+                  src={audibleLogo}
+                  className="h-9 w-auto translate-x-6 max-sm:mx-auto sm:h-8 lg:h-20"
+                />
+                <div className="rounded-full bg-black/70 px-6 py-1 text-sm font-medium tracking-wide text-white">
+                  Coming soon
                 </div>
               </div>
             </div>
           }
           fade={['bottom']}
-          className="lg:col-span-2 lg:rounded-bl-4xl"
+          className="lg:col-span-2 lg:rounded-br-4xl"
         />
       </div>
     </Container>

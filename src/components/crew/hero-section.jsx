@@ -1,4 +1,4 @@
-import crewBg from '@/assets/images/crew-bg.png'
+import crewBg from '@/assets/images/crew-bg.jpg'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Navbar } from '@/components/navbar'

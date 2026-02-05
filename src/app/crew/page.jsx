@@ -15,9 +15,9 @@ export default function CrewPage() {
             Meet the Crew
           </Heading>
           <p className="mt-4 max-w-2xl text-sm/6 text-gray-600">
-            Dossiers de bord du <span className="font-medium">UNS Niña</span>.
-            Profils, antécédents et fragments de scènes. Accès partiellement
-            restreint.
+            Log files of the <span className="font-medium">UNS Niña</span>.
+            Profiles, backgrounds, and scene fragments. Access partially
+            restricted.
           </p>
           <CrewRoster className="mt-12 sm:mt-16" />
         </Container>

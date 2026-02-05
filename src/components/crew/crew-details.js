@@ -1,17 +1,17 @@
-import lexieImg from '@/assets/images/crew/Lexie.png'
-import rajImg from '@/assets/images/crew/Raj.png'
-import samImg from '@/assets/images/crew/Sam.png'
-import sofiaImg from '@/assets/images/crew/Sofia.png'
-import katiImg from '@/assets/images/crew/Takala.png'
-import tinyImg from '@/assets/images/crew/Tiny.png'
-// import sadieImg from '@/assets/images/crew/SADIE.png'
+import lexieImg from '@/assets/images/crew/Lexie.jpg'
+import rajImg from '@/assets/images/crew/Raj.jpg'
+import samImg from '@/assets/images/crew/Sam.jpg'
+import sofiaImg from '@/assets/images/crew/Sofia.jpg'
+import takalaImg from '@/assets/images/crew/Takala.jpg'
+import tinyImg from '@/assets/images/crew/Tiny.jpg'
+// import sadieImg from '@/assets/images/crew/SADIE.jpg'
 
-import lexieHero from '@/assets/images/crew/lexiehero.png'
-import rajHero from '@/assets/images/crew/rajhero.png'
-import samHero from '@/assets/images/crew/samhero.png'
-import sofiaHero from '@/assets/images/crew/sofiahero.png'
-import takalaHero from '@/assets/images/crew/takalahero.png'
-import tinyHero from '@/assets/images/crew/tinyhero.png'
+import lexieHero from '@/assets/images/crew/lexiehero.jpg'
+import rajHero from '@/assets/images/crew/rajhero.jpg'
+import samHero from '@/assets/images/crew/samhero.jpg'
+import sofiaHero from '@/assets/images/crew/sofiahero.jpg'
+import takalaHero from '@/assets/images/crew/takalahero.jpg'
+import tinyHero from '@/assets/images/crew/tinyhero.jpg'
 
 const CrewDetails = [
   {
@@ -489,7 +489,7 @@ When the Niña’s instruments start contradicting reality, Raj trusts feel, tim
     // =========================
     // TIMOTHY "TINY" EVERETT
     // =========================
-    slug: 'tiny-everett',
+    slug: 'timothy-everett',
     name: 'Timothy “Tiny” Everett',
     callSign: 'TINY',
     role: 'Science Officer',
@@ -597,7 +597,7 @@ He collects evidence, builds models, and refuses to “explain away” anything 
     name: 'Dr. Kati Takala',
     callSign: 'KATI',
     role: 'Lead Scientist',
-    image: katiImg,
+    image: takalaImg,
     header: takalaHero,
     accent: 'from-[#fca5a5] via-[#fb7185] to-[#a78bfa]',
 

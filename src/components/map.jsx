@@ -35,7 +35,7 @@ function Marker({ src, top, offset, delay }) {
 export function Map() {
   return (
     <div aria-hidden="true" className="relative size-full">
-      <div className="absolute inset-0 bg-[url(/map.png)] mask-[linear-gradient(to_bottom,black_50%,transparent)] bg-size-[530px_430px] bg-position-[center_-75px] bg-no-repeat" />
+      <div className="absolute inset-0 bg-[url(/map.jpg)] mask-[linear-gradient(to_bottom,black_50%,transparent)] bg-size-[530px_430px] bg-position-[center_-75px] bg-no-repeat" />
       <div className="absolute inset-0">
         <Marker src="/map/1.jpg" top={96} offset={-128} delay={0.15} />
         <Marker src="/map/2.jpg" top={160} offset={-16} delay={0.4} />

@@ -13,17 +13,17 @@ import { Link } from './link'
 import { PlusGridItem } from './plus-grid'
 
 const links = [
-  { href: '/shop', label: 'Shop' },
-  { href: '/about', label: 'About' },
+  { href: '/construction', label: 'Shop' },
+  { href: '/construction', label: 'About' },
   { href: '/blog', label: 'Blog' },
-  { href: '/login', label: 'Login' },
+  { href: '/construction', label: 'Login' },
 ]
 
 function DesktopNav() {
   return (
     <nav className="relative hidden items-center gap-1 lg:flex">
       {links.map(({ href, label }) => (
-        <PlusGridItem key={href} className="relative flex">
+        <PlusGridItem key={label} className="relative flex">
           <Link
             href={href}
             className="flex w-full items-center rounded-xl px-4 py-2.5 text-base font-medium text-gray-50/90 backdrop-blur-3xl"

@@ -11,13 +11,17 @@ function AuthorSection() {
         <Heading as="h2" className="max-w-3xl">
           A Word from the Author
         </Heading>
-        <div className="mt-12 flex justify-evenly">
+
+        {/* Mobile: vertical stack | Desktop: keep your horizontal layout */}
+        <div className="mt-12 flex flex-col items-center gap-10 sm:items-stretch lg:flex-row lg:justify-evenly lg:gap-16">
           <Image
             alt="David Evanson"
             src={DavidEvanson}
-            className="w-auto border-12 border-white shadow-md max-sm:mx-auto lg:h-100"
+            className="h-auto w-full max-w-xs border-12 border-white shadow-md sm:max-w-sm lg:h-100 lg:w-auto"
+            priority
           />
-          <div className="mt-12 flex max-w-160 flex-col gap-y-5 text-lg">
+
+          <div className="flex w-full max-w-160 flex-col gap-y-5 text-base sm:text-lg lg:mt-12">
             <p>Thank you for being here.</p>
 
             <p>
@@ -47,12 +51,15 @@ function AuthorSection() {
               unknown lingers with you a little longer than expected.
             </p>
 
-            <div className="flex w-full items-center justify-between">
-              <p>— David Evanson</p>
+            {/* Mobile: stacked + centered | Desktop: your original side-by-side */}
+            <div className="mt-2 flex flex-col items-center justify-between gap-4 sm:flex-row">
+              <p className="w-full text-center sm:w-auto sm:text-left">
+                — David Evanson
+              </p>
               <Image
                 alt="Signature"
                 src={signature}
-                className="w-auto lg:h-32"
+                className="h-16 w-auto sm:h-20 lg:h-32"
               />
             </div>
           </div>

@@ -1,3 +1,17 @@
+import lexieImg from '@/assets/images/crew/Lexie.jpg'
+import rajImg from '@/assets/images/crew/Raj.jpg'
+import samImg from '@/assets/images/crew/Sam.jpg'
+import sofiaImg from '@/assets/images/crew/Sofia.jpg'
+import takalaImg from '@/assets/images/crew/Takala.jpg'
+import tinyImg from '@/assets/images/crew/Tiny.jpg'
+
+import lexieHero from '@/assets/images/crew/lexiehero.jpg'
+import rajHero from '@/assets/images/crew/rajhero.jpg'
+import samHero from '@/assets/images/crew/samhero.jpg'
+import sofiaHero from '@/assets/images/crew/sofiahero.jpg'
+import takalaHero from '@/assets/images/crew/takalahero.jpg'
+import tinyHero from '@/assets/images/crew/tinyhero.jpg'
+
 export const crew = [
   {
     slug: 'samuel-mercer',
@@ -7,8 +21,8 @@ export const crew = [
     status: 'Active',
     origin: 'Erevos City, Mars',
     specialty: 'Command under pressure • anomaly triage',
-    portrait: '/crew/Sam.png',
-    sceneThumb: '/scenes/bridge-incident.jpg',
+    portrait: samImg,
+    sceneThumb: samHero,
     tags: ['POV', 'Captain', 'GECO'],
   },
   {
@@ -19,8 +33,8 @@ export const crew = [
     status: 'Active',
     origin: 'New Delhi, Earth',
     specialty: 'Manual piloting • thermal crisis response',
-    portrait: '/crew/Raj.png',
-    sceneThumb: '/scenes/blue-star-heat.jpg',
+    portrait: rajImg,
+    sceneThumb: rajHero,
     tags: ['Pilot', 'Dry humor'],
   },
   {
@@ -31,8 +45,8 @@ export const crew = [
     status: 'Active',
     origin: 'Bristol, UK',
     specialty: 'Course corrections • deep-field mapping',
-    portrait: '/crew/Lexie.png',
-    sceneThumb: '/scenes/obsidian-corridor.jpg',
+    portrait: lexieImg,
+    sceneThumb: lexieHero,
     tags: ['Navigation', 'British'],
   },
   {
@@ -43,8 +57,8 @@ export const crew = [
     status: 'Active',
     origin: 'Monterrey, Mexico',
     specialty: 'Jump systems • improvised repairs',
-    portrait: '/crew/Sofia.png',
-    sceneThumb: '/scenes/engine-bay.jpg',
+    portrait: sofiaImg,
+    sceneThumb: sofiaHero,
     tags: ['Engineer', 'Sharp tongue'],
   },
   {
@@ -53,21 +67,21 @@ export const crew = [
     callsign: 'Tiny',
     role: 'Science',
     status: 'Active',
-    origin: 'Callisto',
+    origin: 'Chicago, North American sector',
     specialty: 'Signal analysis • anomaly linguistics',
-    portrait: '/crew/Tiny.png',
-    sceneThumb: '/scenes/prime-numbers.jpg',
+    portrait: tinyImg,
+    sceneThumb: tinyHero,
     tags: ['Science', 'Quiet'],
   },
   {
-    slug: 'sadie',
-    name: 'SADIE',
-    role: 'AI',
+    slug: 'kati-takala',
+    name: 'Dr. Kati Takala',
+    role: 'Chief Scientist at Freyja Station',
     status: 'Classified',
-    origin: 'Onboard core',
-    specialty: 'Neural interface • survival constraints',
-    portrait: '/crew/SADIE.png',
-    sceneThumb: '/scenes/hud-overlay.jpg',
-    tags: ['AI', 'Symbiosis'],
+    origin: 'Sweden, Earth',
+    specialty: 'Xenobiology • anomaly detection',
+    portrait: takalaImg,
+    sceneThumb: takalaHero,
+    tags: ['Science', 'Freyja Station', 'Classified'],
   },
 ]

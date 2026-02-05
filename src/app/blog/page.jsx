@@ -1,9 +1,8 @@
+import Hero from '@/components/blog/hero-section'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
-import { GradientBackground } from '@/components/gradient'
 import { Link } from '@/components/link'
-import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
 import { image } from '@/sanity/image'
 import {
@@ -274,16 +273,15 @@ export default async function Blog({ searchParams }) {
 
   return (
     <main className="overflow-hidden">
-      <GradientBackground />
+      <Hero />
       <Container>
-        <Navbar />
         <Subheading className="mt-16">Blog</Subheading>
         <Heading as="h1" className="mt-2">
-          What’s happening at Radiant.
+          What’s happening at Broken Horizons.
         </Heading>
         <Lead className="mt-6 max-w-3xl">
-          Stay informed with product updates, company news, and insights on how
-          to sell smarter at your company.
+          Stay informed with product updates, news, and insights about the
+          upcoming books and events.
         </Lead>
       </Container>
       {page === 1 && !category && <FeaturedPosts />}
